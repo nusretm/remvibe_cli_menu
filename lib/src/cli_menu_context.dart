@@ -13,6 +13,9 @@ abstract interface class RemVibeCliMenuContext {
   /// Ends the current CLI menu session.
   void exit();
 
+  /// Reads optional free-form input (e.g. project name) from the terminal.
+  Future<String?> ask(String prompt);
+
   /// Prints a message to the current terminal.
   void writeLine(String text);
 }
