@@ -167,5 +167,8 @@ final class _MenuSession implements RemVibeCliMenuContext {
   void exit() => _exited = true;
 
   @override
+  Future<String?> ask(String prompt) => _terminal.readLine(prompt);
+
+  @override
   void writeLine(String text) => _terminal.writeLine(text);
 }
