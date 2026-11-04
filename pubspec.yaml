@@ -1,0 +1,10 @@
+name: remvibe_cli_menu
+description: Lightweight nested and dynamic terminal menus for Dart applications.
+version: 0.1.0-dev.1
+publish_to: none
+
+environment:
+  sdk: ^3.7.0
+
+dev_dependencies:
+  test: ^1.25.0
