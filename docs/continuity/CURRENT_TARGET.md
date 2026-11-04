@@ -25,7 +25,7 @@ No GitHub integration, archiver, package publishing, OS machine monitoring, Flut
 - Independent diff review and Draft PR; separate user approval before squash merge.
 
 ## Current evidence
-Source, example, tests, and documentation authored on feature branch via GitHub. **No Dart SDK available in this assistant's container to execute analyzer/tests or interactive Windows demo.** A GitHub Actions CI workflow is included for automatic test evidence, which must be checked after PR creation. No checks should be claimed green without actual workflow results.
+Source, example, tests and docs authored on feature branch via GitHub. **GitHub Actions PR run [41827340818](https://github.com/nusretm/remvibe_cli_menu/actions/runs/41827340818) succeeded on Ubuntu (2026-11-04): `dart pub get` PASS, `dart analyze` — No issues found, `dart test` — 7/7 PASS.** No Dart SDK is available in this assistant's container; actual Windows interactive example execution remains unverified. Subsequent documentation commits require their own CI run to be checked.
 
 ## Next
 Verify CI outcome, fix any failures, present user with Windows PowerShell clone/checkout/test commands, collect real acceptance, then request separate approval for squash merge/cleanup.
